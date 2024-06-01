@@ -1,0 +1,17 @@
+
+.MODEL SMALL
+.STACK 100
+.CODE
+  MOV CX,26
+  MOV DX,65
+
+  L1:
+     MOV AH,2
+     INT 21H
+     INC DX
+  LOOP L1
+
+  MOV AH,4CH
+  INT 21H
+
+END
